@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@floating-ui/core": "^1.6.5",
+    "@floating-ui/dom": "^1.6.8",
+    "@floating-ui/utils": "^0.2.5",
     "lodash-es": "^4.17.21",
     "vue": "^3.4.31"
   },

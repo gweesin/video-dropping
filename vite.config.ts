@@ -6,10 +6,12 @@ export default defineConfig({
     base: './',
     plugins: [vue()],
     build: {
+        outDir: 'extensions/dist',
+        minify: false,
         rollupOptions: {
             input: {
                 index: 'index.html',
-                contentScript: 'contentScript.js',
+                contentScript: 'extensions/contentScript.js',
             },
             output: {
                 entryFileNames: '[name].js',

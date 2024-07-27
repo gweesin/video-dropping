@@ -16,11 +16,24 @@
         "http://*/*",
         "https://*/*"
     ],
-    "permissions": ["tabs"],
-    "content_scripts": [
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
         {
-            "matches": ["<all_urls>"],
-            "js": ["dist/contentScript.js"]
+            "resources": [
+                "dist/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
         }
     ]
 }

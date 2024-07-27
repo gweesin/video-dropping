@@ -1,0 +1,7 @@
+video-drop-button {
+    background: black;
+    color: white;
+    font-size: 14px;
+    z-index: 20000000;
+    padding: 4px 12px;
+}
