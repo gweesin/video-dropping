@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash-es": "^4.17.21",
     "vue": "^3.4.31"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
+    "chrome-types": "^0.1.295",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.2.2",

@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json.schemastore.org/chrome-manifest",
+    "manifest_version": 3,
+    "name": "Video Dropping",
+    "description": "enabling users to remove unnecessary elements and distractions from their viewing experience.",
+    "version": "0.0.0",
+    "action": {
+        "default_popup": "dist/index.html",
+        "default_icon": {
+            "16": "dist/images/icon-32.png",
+            "24": "dist/images/icon-32.png",
+            "32": "dist/images/icon-32.png"
+        }
+    },
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "permissions": ["tabs"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["dist/contentScript.js"]
+        }
+    ]
+}
